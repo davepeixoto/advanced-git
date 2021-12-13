@@ -4,3 +4,21 @@
 - git flow featuer finish name
 - git flow release start 0.1.0 **version**
 - git flow release finish 0.1.0 **version**
+
+# signatures #
+- GPG Gnu Privacy Guide
+- gpg --list-secret-key --keyid-form LONG
+- gpg --full-generate-key
+    1
+    4096
+    1y
+    name
+    email
+    o
+- gpg --armor --export id
+- git config --global user.signingkey id
+- export GPG_TTY=$(tty)
+- git config commit.gpgsign true **for each repository**
+- git config --global commit.gpgsign true **as default**
+- git config tag.gpgsign true **for each repository**
+- git config --global tag.gpgsign true **as default**
