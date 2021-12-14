@@ -22,3 +22,4 @@
 - git config --global commit.gpgsign true **as default**
 - git config tag.gpgsign true **for each repository**
 - git config --global tag.gpgsign true **as default**
+- git log --show-signature -1
