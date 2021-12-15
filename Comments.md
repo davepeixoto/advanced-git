@@ -26,3 +26,37 @@
 - vim ~/.gnupg/gpg.conf
 - gpgconf --launch gpg-agent
 - gpg --edit-key id
+- adduid
+- uid 2
+- trust
+- save
+
+# SEMVER #
+MAJOR version when you make incompatible API changes,
+MINOR version when you add functionality in a backwards compatible manner, and
+PATCH version when you make backwards compatible bug fixes.
+
+https://semver.org/lang/pt-BR/
+
+# Conventional Commits #
+https://www.conventionalcommits.org/pt-br/v1.0.0/
+
+# Commitlint #
+https://commitlint.js.org/#/
+
+
+# Commitsar #
+https://commitsar.aevea.ee/usage/docker/
+docker run --rm --name="commitsar" -w /src -v "$(pwd)":/src aevea/commitsar commitsar . 
+
+# Commitzen #
+https://commitizen-tools.github.io/commitizen/
+https://github.com/commitizen/cz-cli
+    
+    npm install -g commitizen
+    commitizen init cz-conventional-changelog --save-dev --save-exact
+    git cz
+
+
+
+
